@@ -6,8 +6,8 @@ const learningPath = [
     instructor: "Prof. David J. Malan",
     description:
       "An excellent introduction to programming using Python. David Malan's teaching style made complex concepts approachable and engaging. The course is mainly focused on problem-solving, algorithms, and the fundamentals of computer science, amongst other things like Object-Oriented-Programming and unit tests. I would say it's a perfect entry point for somebody who doesn't want to delve straight into the famously hard(er) CS50x course. Course consists of weekly assignments for each of the 9 problem sets that need to be submitted and graded. A final final project is needed to pass.",
-    image: "/certificates/harvard_edx_logo.png",
-    diploma: "/certificates/cs50p-diploma.png",
+    image: "/certifications/harvard_edx_logo.png",
+    diploma: "/certifications/cs50p-diploma.png",
     diplomaLink:
       "https://certificates.cs50.io/9f1e1432-a612-48d1-bc98-6e853dada7d6.pdf?size=letter",
     completed: true,
@@ -29,8 +29,8 @@ const learningPath = [
     instructor: "Prof. David J. Malan",
     description:
       "The legendary CS50x course! Covered C, Python, SQL, web development, and more. It was challenging but incredibly rewarding, and gave me a strong foundation in computer science. For this course, prof. David J. Malan lives up to his stellar reputation, teaching with utmost care and passion, he puts so much energy into the lessons that by the end he is usually sweating and out of breath. Course consists of weekly assignments for each of the 10 problem sets that need to be submitted and graded. A final project is needed to pass.",
-    image: "/certificates/harvard_edx_logo.png",
-    diploma: "/certificates/cs50x-diploma.png",
+    image: "/certifications/harvard_edx_logo.png",
+    diploma: "/certifications/cs50x-diploma.png",
     diplomaLink:
       "https://certificates.cs50.io/9175b585-17cb-4070-b0d8-8a848fa544bb.pdf?size=letter",
     completed: true,
@@ -52,7 +52,7 @@ const learningPath = [
     instructor: "Dr. Angela Yu",
     description:
       "A comprehensive 70+ hour course covering everything from HTML, CSS, and JavaScript to Node.js, Express, SQL (with postgreSQL), APIs, templating, QA testing and deployment and so much more. Dr. Angela Yu is an amazing instructor that explains everything in detail, making sure nobody is left behind. Currently at 90% completion.",
-    image: "/certificates/udemy_logo.jpg",
+    image: "/certifications/udemy_logo.jpg",
     diploma: null,
     diplomaLink: null,
     completed: false,
@@ -69,8 +69,8 @@ const learningPath = [
     instructor: "Bob Ziroll",
     description:
       "Bob Ziroll's Scrimba course made learning React fun and interactive. I built several projects and learned about components, props, hooks, state management and side-effects. The instructor believes in learning by doing, so each lesson takes place in Scrimba's IDE where you need to stop listening and solve challenges in order to progress the course. At the end, two final projects are needed to pass.",
-    image: "/certificates/scrimba_logo.png",
-    diploma: "/certificates/scrimba_react_diploma.png",
+    image: "/certifications/scrimba_logo.png",
+    diploma: "/certifications/scrimba_react_diploma.png",
     diplomaLink:
       "https://scrimba.com/certificate-cert24zAwPPowMrJUVTuq52EGHceev5r5YBy22LRe",
     completed: true,

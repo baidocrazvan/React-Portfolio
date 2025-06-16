@@ -98,7 +98,7 @@ export const LearningPathSection = () => {
   return (
     <section id="learning-path" className="py-24 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">
           My <span className="text-primary">Learning Path</span>
         </h2>
         <div className="flex flex-col gap-6">
@@ -108,19 +108,17 @@ export const LearningPathSection = () => {
               className="bg-card rounded-lg shadow-xs border border-border transition-all"
             >
               <button
-                className="w-full flex items-center p-4 gap-4 focus:outline-none"
+                className="w-full flex flex-col sm:flex-row items-center p-4 gap-4 focus:outline-none"
                 onClick={() => toggle(course.id)}
                 aria-expanded={openId === course.id}
               >
-                {/* Logo container with increased width */}
-
                 <img
                   src={course.image}
                   alt={course.provider}
                   className="w-24 h-18 object-contain rounded bg-background border border-border"
                 />
 
-                <span className="flex-1 text-left font-semibold text-lg">
+                <span className="flex-1 text-center font-semibold text-lg md:text-left">
                   {course.title}
                 </span>
                 <span className="text-primary">
@@ -156,7 +154,7 @@ export const LearningPathSection = () => {
                         <img
                           src={course.diploma}
                           alt={`${course.title} diploma`}
-                          className="max-w-lg w-full rounded shadow-md border border-border"
+                          className="w-full max-w-xs sm:max-w-lg rounded shadow-md border border-border mx-auto"
                         />
                       </a>
                     </div>

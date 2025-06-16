@@ -22,7 +22,7 @@ const projects = [
     id: 1,
     title: "Baydock Leatherworks",
     description:
-      "A stylish, full-featured web store for unique leather crafts. Complete with user authentication, email verification and guest cart.",
+      "A stylish, full-featured web store for unique leather crafts. Complete with user authentication, email verification, guest cart and admin dashboard.",
     image: "/projects/baydock.png",
     tags: ["Node.js", "Express", "SCSS"],
     demoUrl: "https://baydock-leatherworks.onrender.com/",

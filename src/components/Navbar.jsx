@@ -14,7 +14,7 @@ const navItems = [
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   {
-    /* Track of mobile menu is open */
+    /* Track if mobile menu is open */
   }
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,11 +30,11 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
+        "fixed w-full bg-background/95 backdrop-blur-md z-40 transition-all duration-300",
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between ">
         {/* Navbar Logo */}
         <a
           className="text-xl font-bold text-primary flex items-center"
@@ -71,7 +71,7 @@ export const Navbar = () => {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-black/50 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"

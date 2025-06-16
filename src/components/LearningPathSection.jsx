@@ -4,8 +4,14 @@ const learningPath = [
     title: "CS50P: Introduction to Programming with Python",
     provider: "Harvard (edX)",
     instructor: "Prof. David J. Malan",
-    description:
-      "An excellent introduction to programming using Python. David Malan's teaching style made complex concepts approachable and engaging. The course is mainly focused on problem-solving, algorithms, and the fundamentals of computer science, amongst other things like Object-Oriented-Programming and unit tests. I would say it's a perfect entry point for somebody who doesn't want to delve straight into the famously hard(er) CS50x course. Course consists of weekly assignments for each of the 9 problem sets that need to be submitted and graded. A final final project is needed to pass.",
+    description: `An excellent introduction to programming using Python. 
+      David Malan's teaching style made complex concepts approachable and engaging.
+      The course is mainly focused on problem-solving, algorithms, and the fundamentals
+      of computer science,amongst other things like Object-Oriented-Programming and unit
+      tests. I would say it's a perfect entry pointfor somebody who doesn't want to delve
+      straight into the famously hard(er) CS50x course. Course consists of weekly
+      assignments for each of the 9 problem sets that need to be submitted and
+      graded. A final final project is needed to pass.`,
     image: "/certifications/harvard_edx_logo.png",
     diploma: "/certifications/cs50p-diploma.png",
     diplomaLink:
@@ -89,6 +95,7 @@ const learningPath = [
 
 import { useState } from "react";
 import { ChevronDown, ChevronRight, ExternalLink } from "lucide-react";
+import { cn } from "../lib/utils";
 
 export const LearningPathSection = () => {
   const [openId, setOpenId] = useState(null);
@@ -105,7 +112,10 @@ export const LearningPathSection = () => {
           {learningPath.map((course) => (
             <div
               key={course.id}
-              className="bg-card rounded-lg shadow-xs border border-border transition-all"
+              className={cn(
+                "bg-card rounded-lg shadow-xs border border-border overflow-hidden transition-all duration-300 ease-in-out",
+                openId === course.id ? "max-h-[1200px]" : "max-h-[190px]"
+              )}
             >
               <button
                 className="w-full flex flex-col sm:flex-row items-center p-4 gap-4 focus:outline-none"
@@ -121,8 +131,12 @@ export const LearningPathSection = () => {
                 <span className="flex-1 text-center font-semibold text-lg md:text-left">
                   {course.title}
                 </span>
-                <span className="text-primary">
-                  {openId === course.id ? <ChevronDown /> : <ChevronRight />}
+                <span
+                  className={`text-primary transition-transform duration-300 ${
+                    openId === course.id ? "rotate-90" : "rotate-0"
+                  }`}
+                >
+                  <ChevronRight />
                 </span>
               </button>
               {openId === course.id && (

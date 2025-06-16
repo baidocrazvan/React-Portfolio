@@ -8,6 +8,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "Learning Path", href: "#learning-path" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -21,20 +22,30 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Set to true if the distance of scroll is greater than the size of navbar
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    // Clean up in case the component unmounts while menu is open
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isMenuOpen]);
   return (
     <nav
       className={cn(
-        "fixed w-full bg-background/95 backdrop-blur-md z-40 transition-all duration-300",
+        "fixed w-full z-40 transition-all duration-300",
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between ">
+      <div className="container flex items-center justify-between">
         {/* Navbar Logo */}
         <a
           className="text-xl font-bold text-primary flex items-center"
@@ -62,16 +73,16 @@ export const Navbar = () => {
 
         {/* vertical mobile nav */}
         <button
-          onClick={() => setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen)}
+          onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
         </button>
 
         <div
           className={cn(
-            "fixed inset-0 bg-black/50 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"

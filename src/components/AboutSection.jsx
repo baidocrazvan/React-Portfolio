@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Blocks, Briefcase, Code, Server, User } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -31,7 +31,7 @@ export const AboutSection = () => {
             have always loved to solve and tackle problems, especially in
             software development, where I thrive on tackling challenges and
             learning new solutions. I do believe these characteristics along
-            with my persistance have helped me tremendously on my learning
+            with my persistance have helped me tremendously in my learning
             journey.
           </p>
 
@@ -58,11 +58,10 @@ export const AboutSection = () => {
                 <Code className="h-6 w-6 text-primary" />
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Development</h4>
+                <h4 className="font-semibold text-lg">Core Foundations</h4>
                 <p className="text-muted-foreground">
                   {" "}
-                  Creating responsive websites and web applications with modern
-                  frameworks
+                  HTML5, CSS, JavaScript (ES6+), Responsive Design, Git
                 </p>
               </div>
             </div>
@@ -70,14 +69,13 @@ export const AboutSection = () => {
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-primary/10">
-                <User className="h-6 w-6 text-primary" />
+                <Server className="h-6 w-6 text-primary" />
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Development</h4>
+                <h4 className="font-semibold text-lg">Backend Development</h4>
                 <p className="text-muted-foreground">
                   {" "}
-                  Creating responsive websites and web applications with modern
-                  frameworks
+                  Node.js, Express, REST APIs, PostgreSQL, EJS Templating
                 </p>
               </div>
             </div>
@@ -85,14 +83,14 @@ export const AboutSection = () => {
           <div className="gradient-border p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-primary/10">
-                <Briefcase className="h-6 w-6 text-primary" />
+                <Blocks className="h-6 w-6 text-primary" />
               </div>
               <div className="text-left">
-                <h4 className="font-semibold text-lg">Web Development</h4>
+                <h4 className="font-semibold text-lg">Currently Learning</h4>
                 <p className="text-muted-foreground">
                   {" "}
-                  Creating responsive websites and web applications with modern
-                  frameworks
+                  Daily coding practice while expanding into modern frameworks
+                  and tools: React, Next.js, TailwindCSS, TypeScript
                 </p>
               </div>
             </div>

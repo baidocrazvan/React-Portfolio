@@ -8,18 +8,26 @@ import { ProjectSection } from "../components/ProjectSection";
 import { ContactSection } from "../components/ContactSection";
 import { LearningPathSection } from "../components/LearningPathSection";
 import { Footer } from "../components/Footer";
+import { useState, useEffect } from "react";
 
 export const Home = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
-      <ThemeToggle />
+      <ThemeToggle isScrolled={isScrolled} />
 
       {/* Background Effects */}
       <StarBackground />
 
       {/* Navbar */}
-      <Navbar />
+      <Navbar isScrolled={isScrolled} />
       {/* Main Content */}
       <main>
         <HeroSection />

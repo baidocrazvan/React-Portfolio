@@ -2,7 +2,7 @@ import { Moon, Sun } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "../lib/utils";
 
-export const ThemeToggle = () => {
+export const ThemeToggle = (props) => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
@@ -38,7 +38,8 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 md:top-4 right-2 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed max-sm:hidden top-5 md:top-4 right-2 z-50 p-2 rounded-full transition-all duration-300",
+        props.isScrolled ? "top-2 md:top-2" : "top-5 md:top-4",
         "focus:outline-hidden"
       )}
     >

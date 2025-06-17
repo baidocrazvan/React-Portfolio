@@ -114,7 +114,7 @@ export const LearningPathSection = () => {
               key={course.id}
               className={cn(
                 "bg-card rounded-lg shadow-xs border border-border overflow-hidden transition-all duration-300 ease-in-out",
-                openId === course.id ? "max-h-[1200px]" : "max-h-[200px]"
+                openId === course.id ? "max-h-[1200px]" : "max-h-[220px]"
               )}
             >
               <button

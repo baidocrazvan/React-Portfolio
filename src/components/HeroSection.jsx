@@ -19,12 +19,12 @@ export const HeroSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
             I'm an aspiring web developer currently learning to work with latest
             modern technologies. I'm fascinated by both beautiful designs and
-            the backend arhitecture that supports them.
+            the backend architecture that supports them.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
-              View My Work
+              View Projects
             </a>
           </div>
         </div>

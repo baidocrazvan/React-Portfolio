@@ -12,25 +12,33 @@ export const AboutSection = () => {
       <div className="grid grid-col-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h3 className="text-2xl font-semibold">
-            Passionate web developer & Tech Creator
+            Aspiring Developer & Tech Enthusiast
           </h3>
-
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            lacus leo, ultricies sed iaculis sed, laoreet in augue. Nunc ornare
-            posuere magna. Maecenas ultricies, nisi quam.
+            My name is Razvan, and I’m from Oradea. Over the past year, I’ve
+            focused on mastering the foundations(HTML/CSS/JS) of full-stack web
+            development, including backend systems with Node.js and modern
+            frontend technologies like React, Next.js, and TailwindCSS. I’m
+            currently deepening my expertise in these frameworks while expanding
+            my toolkit.
           </p>
-
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            lacus leo, ultricies sed iaculis sed, laoreet in augue. Nunc ornare
-            posuere magna. Maecenas ultricies, nisi quam.
+            I’ve been a tech enthusiast since childhood—tinkering with
+            computers, creating game mods, writing and uploading .srt subtitles
+            to video sites, and fixing computer hardware for friends or
+            installing Windows on their machines. I have always known that I
+            would appreciate the intricacies of software development because I
+            have always loved to solve and tackle problems, especially in
+            software development, where I thrive on tackling challenges and
+            learning new solutions. I do believe these characteristics along
+            with my persistance have helped me tremendously on my learning
+            journey.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-            <a href="#contact" className="cosmic-button">
+            <a href="#learning-path" className="cosmic-button">
               {" "}
-              Get In Touch
+              My Learning Path
             </a>
 
             {/* Link to CV download */}

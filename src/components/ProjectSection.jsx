@@ -14,12 +14,11 @@ const projects = [
       "A visually interesting image gallery featuring scanned physical photos from my own personal collection with minimal technologies: HTML/CSS and JS.",
     image: "/projects/3dGallery.png",
     tags: ["HTML", "CSS", "Javascript"],
-    demoUrl:
-      "https://github.com/baidocrazvan/Personal-Photo-Gallery/deployments",
+    demoUrl: "https://baidocrazvan.github.io/Personal-Photo-Gallery/",
     githubUrl: "https://github.com/baidocrazvan/Personal-Photo-Gallery",
   },
   {
-    id: 1,
+    id: 2,
     title: "Baydock Leatherworks",
     description:
       "A stylish, full-featured web store for unique leather crafts. Complete with user authentication, email verification, guest cart and admin dashboard.",
@@ -27,6 +26,26 @@ const projects = [
     tags: ["Node.js", "Express", "SCSS"],
     demoUrl: "https://baydock-leatherworks.onrender.com/",
     githubUrl: "https://github.com/baidocrazvan/baydock-leather",
+  },
+  {
+    id: 3,
+    title: "Tenzies",
+    description:
+      "A browser-based version of the classic dice game Tenzies, built with React as part of the final project for the Scrimba 'Learn React' course.",
+    image: "/projects/tenzies.png",
+    tags: ["React"],
+    demoUrl: "https://react-tenzies-livid.vercel.app/",
+    githubUrl: "https://github.com/baidocrazvan/React-Tenzies",
+  },
+  {
+    id: 4,
+    title: "Assembly: Endgame",
+    description:
+      "Assembly: Endgame is a React-based word game inspired by Hangman, created as the final project for the Scrimba 'Learn React' course.",
+    image: "/projects/assembly.png",
+    tags: ["React"],
+    demoUrl: "https://assembly-end-game-nu.vercel.app/",
+    githubUrl: "https://github.com/baidocrazvan/Assembly-Endgame",
   },
 ];
 

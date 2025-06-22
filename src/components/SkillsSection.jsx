@@ -1,29 +1,7 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
 
-const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 60, category: "frontend" },
-  { name: "TailwindCSS", level: 40, category: "frontend" },
-
-  // Backend
-  { name: "Node.js", level: 90, category: "backend" },
-  { name: "Express", level: 90, category: "backend" },
-  { name: "PostgreSQL", level: 80, category: "backend" },
-  { name: "Python/Flask", level: 80, category: "backend" },
-
-  // Tools
-  { name: "Git/Github", level: 90, category: "tools" },
-  { name: "Docker", level: 60, category: "tools" },
-  { name: "Figma", level: 70, category: "tools" },
-  { name: "Postman", level: 90, category: "tools" },
-];
-
-const categories = ["all", "frontend", "backend", "tools"];
-
-export const SkillsSection = () => {
+export const SkillsSection = ({ skills, categories }) => {
   const [activeCategory, setActiveCategory] = useState("all");
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory

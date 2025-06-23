@@ -24,15 +24,14 @@ export const AboutSection = () => {
           </p>
           <p className="text-muted-foreground">
             I’ve been a tech enthusiast since childhood—tinkering with
-            computers, creating game mods, writing and uploading .srt subtitles
-            to video sites, and fixing computer hardware for friends or
-            installing Windows on their machines. I have always known that I
-            would appreciate the intricacies of software development because I
-            have always loved to solve and tackle problems, especially in
-            software development, where I thrive on tackling challenges and
-            learning new solutions. I do believe these characteristics along
-            with my persistance have helped me tremendously in my learning
-            journey.
+            computers, creating game mods, writing and uploading subtitles to
+            video sites, and fixing computer hardware for friends. I have always
+            known that I would appreciate the intricacies of software
+            development because I have always loved to solve and tackle
+            problems, especially in software development, where I thrive on
+            tackling challenges and learning new solutions. I do believe these
+            characteristics along with my persistance have helped me
+            tremendously in my learning journey.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -43,10 +42,10 @@ export const AboutSection = () => {
 
             {/* Link to CV download */}
             <a
-              href=""
+              href="https://drive.google.com/file/d/1X1MlsYYhef37ch9iQ4CVzQvDQO-yxXLz/view"
               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
             >
-              Download CV
+              View CV
             </a>
           </div>
         </div>
@@ -75,7 +74,8 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg">Backend Development</h4>
                 <p className="text-muted-foreground">
                   {" "}
-                  Node.js, Express, REST APIs, PostgreSQL, EJS Templating
+                  Node.js, Express, REST APIs, PostgreSQL, Testing (Vitest), EJS
+                  Templating
                 </p>
               </div>
             </div>
@@ -89,8 +89,8 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg">Currently Learning</h4>
                 <p className="text-muted-foreground">
                   {" "}
-                  Daily coding practice while expanding into modern frameworks
-                  and tools: React, Next.js, TailwindCSS, TypeScript
+                  Working on existing skills while expanding into modern
+                  frameworks and tools: React, Next.js, TypeScript
                 </p>
               </div>
             </div>

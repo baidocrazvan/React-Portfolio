@@ -13,9 +13,9 @@ export const projects = [
     id: 2,
     title: "Baydock Leatherworks",
     description:
-      "A stylish, full-featured web store for unique leather crafts. Complete with user authentication, email verification, guest cart and admin dashboard.",
+      "A stylish, full-stack e-commerce platform for unique leather crafts. Complete with user authentication, cookies, email verification, guest cart and admin dashboard and unit/integration tests.",
     image: "/projects/baydock.png",
-    tags: ["Node.js", "Express", "SCSS"],
+    tags: ["Express", "PostgreSQL", "EJS", "Vitest"],
     demoUrl: "https://baydock-leatherworks.onrender.com/",
     githubUrl: "https://github.com/baidocrazvan/baydock-leather",
   },

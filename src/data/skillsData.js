@@ -16,7 +16,12 @@ export const skills = [
   },
 
   // Backend
-  { name: "Node.js (Express)", level: 70, category: "backend" },
+  {
+    name: "Node.js (Express)",
+    level: 70,
+    category: "backend",
+    note: "Core framework for e-commerce app (auth, APIs, sessions)",
+  },
   {
     name: "PostgreSQL",
     level: 60,

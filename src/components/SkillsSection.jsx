@@ -1,13 +1,35 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 import { ChevronRight } from "lucide-react";
+const mobileBreakpoint = 640;
 
 export const SkillsSection = ({ skills, categories }) => {
   const [activeCategory, setActiveCategory] = useState("all");
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= mobileBreakpoint
+  );
+  const prevIsMobile = useRef(isMobile);
   const [flippedCard, setFlippedCard] = useState(null);
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= mobileBreakpoint);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    // Only reset when crossing from desktop to mobile
+    if (!prevIsMobile.current && isMobile) {
+      setFlippedCard(null);
+    }
+    prevIsMobile.current = isMobile;
+  }, [isMobile]);
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">

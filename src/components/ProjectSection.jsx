@@ -16,9 +16,9 @@ export const ProjectSection = ({ projects }) => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience in
-          mind.
+          Here are some of my recent projects in chronological order. Each
+          project was carefully crafted with attention to detail, performance,
+          and user experience in mind.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

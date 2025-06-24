@@ -39,4 +39,14 @@ export const projects = [
     demoUrl: "https://assembly-end-game-nu.vercel.app/",
     githubUrl: "https://github.com/baidocrazvan/Assembly-Endgame",
   },
+  {
+    id: 5,
+    title: "My Portfolio Website",
+    description:
+      "The very site you're viewing! Built with React, Tailwind CSS, and cosmic animations. Features data-driven components, dynamic theming, responsive design, and a contact form.",
+    tags: ["React", "Tailwind CSS", "Vite"],
+    image: "/projects/portfolio.png",
+    githubUrl: "https://github.com/baidocrazvan/React-Portfolio",
+    demoUrl: "",
+  },
 ];

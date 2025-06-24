@@ -12,12 +12,12 @@ A modern, interactive single-page portfolio showcasing my skills, projects, and 
 
 - [Key Features](#-key-features)
 - [Screenshots/Vids](#screenshotsvids--click-to-expand)
-- [Technologies Used](-technologies-used)
-- [Installation & Setup](-installation--setup)
-- [Special Components](-special-components)
+- [Technologies Used](#-technologies-used)
+- [Installation & Setup](#-installation--setup)
+- [Special Components](#-special-components)
 - [Design Principles](#-design-principles)
 - [Customizing content](#-customizing-content)
-- [Deployment](-deployment-vercel)
+- [Deployment](#-deployment-vercel)
 - [License](#license)
 
 ---

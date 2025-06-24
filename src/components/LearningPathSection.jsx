@@ -8,7 +8,10 @@ export const LearningPathSection = ({ learningPath }) => {
   const toggle = (id) => setOpenId(openId === id ? null : id);
 
   return (
-    <section id="learning-path" className="py-24 px-4 bg-secondary/30">
+    <section
+      id="learning-path"
+      className="py-24 px-4 bg-secondary/30 relative z-10"
+    >
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">
           My <span className="text-primary">Learning Path</span>

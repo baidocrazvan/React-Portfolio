@@ -52,13 +52,16 @@ export const ProjectSection = ({ projects }) => {
                   {project.description}
                 </p>
                 <div className="absolute bottom-4 left-6 flex space-x-3">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
+
                   <a
                     href={project.githubUrl}
                     target="_blank"

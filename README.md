@@ -180,21 +180,21 @@ https://github.com/user-attachments/assets/c5534e8e-e20f-450a-85be-146efdd05f0b
 
 ## 🎨 Design Principles
 
-    - Color System: HSL-based theming with Tailwind
-    - Animations: Custom CSS keyframes for performance
-    - Responsive: Mobile-first fluid layouts
-    - Accessibility:
-        - Keyboard navigable
-        - ARIA labels for interactive elements
+- **Color System**: HSL-based theming with Tailwind  
+- **Animations**: Custom CSS keyframes for performance  
+- **Responsive**: Mobile-first fluid layouts  
+- **Accessibility**:  
+  - Keyboard navigable  
+  - ARIA labels for interactive elements
 
 ---
 
 ## 📝 Customizing Content
 
-    - Edit the data files to update your information:
-        - Skills: src/data/skillsData.js
-        - Projects: src/data/projectsData.js
-        - Learning Path: src/data/learningPathData.js
+To modify the content, edit these files:  
+- **Skills**: `src/data/skillsData.js`  
+- **Projects**: `src/data/projectsData.js`  
+- **Learning Path**: `src/data/learningPathData.js`  
 
 ---
 

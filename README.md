@@ -10,12 +10,14 @@ A modern, interactive single-page portfolio showcasing my skills, projects, and 
 
 ## Table of Contents
 
-- [Key Features](#key-features)
-- [Technologies Used](#technologies-used)
-- [Screenshots/Vids](#screenshots/vids)
-- [Installation & Setup](#installation-&-setup)
-- [Special Components](#special-components)
-- [Deployment](#deployment)
+- [Key Features](#-key-features)
+- [Screenshots/Vids](#screenshotsvids--click-to-expand)
+- [Technologies Used](#-technologies-used)
+- [Installation & Setup](#-installation--setup)
+- [Special Components](#-special-components)
+- [Design Principles](#-design-principles)
+- [Customizing content](#-customizing-content)
+- [Deployment](#-deployment-vercel)
 - [License](#license)
 
 ---
@@ -53,52 +55,53 @@ A modern, interactive single-page portfolio showcasing my skills, projects, and 
 <details>
 <summary>🏠 Hero Section (Desktop)</summary>
   
-![Hero Light](./screenshots/hero-light.png)  
-*Default light mode view*  
-![Hero Dark](./screenshots/hero-dark.png)  
+*Default light mode view*    
+![Hero Light](./public/screenshots/hero-light.png)
+  
 *Dark mode variant*
+![Hero Dark](./public/screenshots/hero-dark.png)  
+
 </details>
 
 <details>
 <summary>🌔Theme Toggle</summary>
+
   
-<video autoplay loop muted playsinline width="600">
-  <source src="./screenshots/ThemeToggle.mp4" type="video/mp4">
-  <img src="./screenshots/ThemeToggle.gif" alt="Theme Toggle (GIF fallback)">
-</video>
+https://github.com/user-attachments/assets/e3b0e22e-2390-41a9-90de-5fd9c7c309ce
+
 
 </details>
 
 <details>
 <summary>⚙️ Skills Section</summary>
+
   
-<video autoplay loop muted playsinline width="600">
-  <source src="./screenshots/SkillsSection.mp4" type="video/mp4">
-  <img src="./screenshots/SkillsSection.gif" alt="Skills Section (GIF fallback)">
-</video>
+https://github.com/user-attachments/assets/32783caf-ef1d-4580-96ae-c8f88526bcc1
+
 
 </details>
 
 <details>
-<summary>🌌 Background Effect (Randmoly generated stars & meteors)</summary>
+<summary>🌌 Background Effect (Randomly generated stars & meteors)</summary>
+
   
-<video autoplay loop muted playsinline width="400">
-  <source src="./screenshots/StarBackground.mp4" type="video/mp4">
-  <img src="./screenshots/StarBackground.gif" alt="Star Background (GIF fallback)">
-</video>
+https://github.com/user-attachments/assets/c239e0a4-050a-40b0-b036-2803bcfe8b12
+
+
 </details>
 
 <details>
 <summary>📧 Contact Section</summary>
-<video autoplay loop muted playsinline width="400">
-  <source src="./screenshots/ContactSection.mp4" type="video/mp4">
-  <img src="./screenshots/ContactSection.gif" alt="Contact Section (GIF fallback)">
-</video>
+
+
+https://github.com/user-attachments/assets/c5534e8e-e20f-450a-85be-146efdd05f0b
+
+
 </details>
 
 ---
 
-## 🛠️ Technologies Used
+## 💡 Technologies Used
 
 - **Frontend**
 
@@ -111,7 +114,7 @@ A modern, interactive single-page portfolio showcasing my skills, projects, and 
   - EmailJS (contact form)
   - Environment variables for configuration
 
-## 🛠️ Installation & Setup
+## 🔧 Installation & Setup
 
 1. **Clone the repository**
    ```
@@ -177,21 +180,21 @@ A modern, interactive single-page portfolio showcasing my skills, projects, and 
 
 ## 🎨 Design Principles
 
-    - Color System: HSL-based theming with Tailwind
-    - Animations: Custom CSS keyframes for performance
-    - Responsive: Mobile-first fluid layouts
-    - Accessibility:
-        - Keyboard navigable
-        - ARIA labels for interactive elements
+- **Color System**: HSL-based theming with Tailwind  
+- **Animations**: Custom CSS keyframes for performance  
+- **Responsive**: Mobile-first fluid layouts  
+- **Accessibility**:  
+  - Keyboard navigable  
+  - ARIA labels for interactive elements
 
 ---
 
 ## 📝 Customizing Content
 
-    - Edit the data files to update your information:
-        - Skills: src/data/skillsData.js
-        - Projects: src/data/projectsData.js
-        - Learning Path: src/data/learningPathData.js
+To modify the content, edit these files:  
+- **Skills**: `src/data/skillsData.js`  
+- **Projects**: `src/data/projectsData.js`  
+- **Learning Path**: `src/data/learningPathData.js`  
 
 ---
 
